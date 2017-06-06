@@ -114,9 +114,9 @@ public class WebDataServiceProxy implements cn.com.sneb.www.WebDataService {
     
     for (String h: headers) {
       out.write(h);
-      out.write(",other");
+      out.write(",");
     }
-    out.write("\n");
+    out.write("other\n");
     
     for (Map<String, String> row: dt.getRows()) {
       for (String h: headers) {
